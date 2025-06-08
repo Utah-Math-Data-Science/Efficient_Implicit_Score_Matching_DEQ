@@ -1,8 +1,6 @@
 # Efficient Score Matching with Deep Equilibrium Layers
 
-This code is based on the code of the following paper:
-
-Sliced Score Matching: A Scalable Approach to Density and Score Estimation](https://arxiv.org/abs/1905.07088), UAI 2019. 
+This code is based on the code of the following paper: Sliced Score Matching: A Scalable Approach to Density and Score Estimation](https://arxiv.org/abs/1905.07088), UAI 2019. 
 
 
 ## Dependencies
