@@ -1,0 +1,22 @@
+training:
+  batch_size: 128
+  n_epochs: 6000
+  n_iters: 200000
+  algo: "vae"
+
+data:
+  dataset: "CELEBA"
+  image_size: 64
+  channels: 3
+
+model:
+  n_particles: 1
+  z_dim: 32
+  eps_dim: 32
+  nef: 32
+  ndf: 32
+
+optim:
+  weight_decay: 0.001
+  optimizer: "RMSProp"
+  lr: 0.0005

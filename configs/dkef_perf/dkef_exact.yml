@@ -1,0 +1,25 @@
+training:
+  batch_size: 32
+  val_batch_size: 32
+  fval_batch_size: 32
+  n_epochs: 10000
+  patience: 999999
+  algo: "exact"
+data:
+  dataset: "HighDim"
+  # dataset: 'Parkinsons'
+  #dataset: 'RedWine'
+  # dataset: 'WhiteWine'
+model:
+  M: 200
+  #M: 64
+  num_kernels: 3
+  hidden_dim: 32
+  add_skip: True
+  alpha_param: False
+  train_Z: True
+  fixed_net: False
+optim:
+  weight_decay: 0.05
+  optimizer: "RMSProp"
+  lr: 0.001

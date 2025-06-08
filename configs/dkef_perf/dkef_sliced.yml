@@ -1,0 +1,26 @@
+training:
+  batch_size: 32
+  val_batch_size: 10
+  fval_batch_size: 10
+  n_epochs: 100000
+  patience: 1000000
+  algo: "sliced"
+data:
+  # dataset: "HighDim"
+  # dataset: 'Parkinsons'
+  dataset: 'RedWine'
+  # dataset: 'WhiteWine'
+model:
+  #M: 500
+  M: 64
+  num_kernels: 3
+  # hidden_dim: 128
+  hidden_dim: 32
+  add_skip: True
+  alpha_param: False
+  train_Z: True
+  fixed_net: False
+optim:
+  weight_decay: 0.0
+  optimizer: "Adam"
+  lr: 0.00005

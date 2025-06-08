@@ -1,0 +1,28 @@
+training:
+  batch_size: 64
+  n_epochs: 3000
+  n_iters: 400000
+  algo: "ssm"
+
+data:
+  dataset: "CIFAR10"
+  image_size: 32
+  channels: 3
+
+model:
+  n_particles: 1
+  eps_dim: 32
+  z_dim: 64
+  nef: 64
+  ndf: 64
+  fix_ssm: False
+  deep_ssm: False
+  origin_ssm: True
+  fix_dec: False
+  isresnet: False
+
+optim:
+  weight_decay: 0.0
+  ssm_w_decay: 0.0
+  optimizer: "RMSProp"
+  lr: 0.0002
